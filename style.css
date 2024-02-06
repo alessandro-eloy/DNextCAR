@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+ 
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --white: #fff;
+    --dark1: #34344e;
+    --dark2: #3a415a;
+    --dark3: #566981;
+    --dark4: #cbdad5;
+    --dark5: #2f2f46;
+    --red:   #ff0000;
+    --cyan1: #70e3ea;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--dark2);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--dark3);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--dark4);
+}
+
+body{
+    background-color: var(--dark1);
+    height: 100vh;
+    font-family: 'Lato';
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color: var(--dark5);
+    min-height: 50px;
+}
+
+.box-img-header{
+    height: 100%;
+}
+
+.img-logo{
+    max-width: 60px;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: var(--white) ;
+}
+
+.nav-links:hover{
+    color: var(--dark3);
+    transition: .4s;
+    text-decoration: underline;
+}
+
+.box-bnt-actions{
+    display: flex;
+    gap: 1rem;
+}
+
+:is(button, .link-action){
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-action{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--red);
+}
+
+.btn-action:hover{
+    background-color: var(--dark2);
+    border: 1px solid var(--dark2);
+}
+
+.link-action{
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section{
+    padding: 4rem;
+}
+
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px;
+}
+
+.first-section>div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+h1{
+    font-size: 3rem;
+    color: var(--white);
+    letter-spacing: 8px;
+}
+
+.first-section p{
+    color: var(--white);
+}
+
+.box-img-main{
+    max-width: 450px;
+    padding: 1rem;
+}
+
+.img-profile{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.title{
+    color: var(--white);
+}
+
+.second-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.second-section > div{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.second-section > div img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.second-section > div p{
+    max-width: 600px;
+    color: var(--white);
+    text-align: justify;
+}
+
+.third-section{
+    display: flex;
+    background-color: var(--dark2);
+    color: var(--red);
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 34px 44px 34px 44px;
+}
+
+.carros{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark4);
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        max-width: 354px;
+        transition: transform 0.2;
+    }
+}
+
+.carros img:hover{
+    transform: scale(1.2);
+    z-index:1;
+}
+
+.carros-info{
+    width: 100%;
+    font-size: 10px;
+    display: flex;
+    justify-content:space-between;
+    padding: 14px ;
+    background-color: var(--dark4);
+    z-index: 99;
+}
+.carros-info button{
+    display: flex;
+    padding: 4px 30px;
+    border-radius: 4px;
+    border: 0;
+    cursor: default;
+}
+
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+:is(.img-profile, .img-who-am-i){
+    box-shadow: 1px 1px 1px 1px var(--cyan1);
+}footer p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
